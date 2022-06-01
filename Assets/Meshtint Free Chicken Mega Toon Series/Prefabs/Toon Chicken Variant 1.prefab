@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3467726250580541651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.274002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37909448
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.625968
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265727355618328467, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267875501697120925, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_Name
+      value: Toon Chicken
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374414455076476755, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e463398aa3aa5f40bf48615034e2e89, type: 3}
+    - target: {fileID: 7374414455076476755, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 7825407366790016652, guid: 1837e6b661662fc4dbdea7d4a02d24f5, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+--- !u!1 &2541573770840004493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1394617550875711326, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+  m_PrefabInstance: {fileID: 3467726250580541651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6217492268697278336 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7374414455076476755, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+  m_PrefabInstance: {fileID: 3467726250580541651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &356077325757693089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541573770840004493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccac0e3fc0e0fa4dbb3c174d60ae371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChickenEf: {fileID: 6217492268697278336}
