@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267875501697120925, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
       propertyPath: m_Name
-      value: Toon Chicken
+      value: Toon Chicken Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 7374414455076476755, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
       propertyPath: m_audioClip
@@ -65,6 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 7825407366790016652, guid: 1837e6b661662fc4dbdea7d4a02d24f5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+--- !u!1 &2109379877135006286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267875501697120925, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
+  m_PrefabInstance: {fileID: 3467726250580541651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2541573770840004493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1394617550875711326, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
@@ -75,6 +80,20 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 7374414455076476755, guid: 7100a1fed117de845abac062f7a4a2f9, type: 3}
   m_PrefabInstance: {fileID: 3467726250580541651}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2248024130141047846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109379877135006286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a82e5bb466285a46a12837b77185769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  startWaitTime: 0
 --- !u!114 &356077325757693089
 MonoBehaviour:
   m_ObjectHideFlags: 0
