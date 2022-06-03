@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CloseScript2 : MonoBehaviour
-{
+{ 
     public void CloseScene()
     {
-        Application.LoadLevel("Scene1");
+            Application.LoadLevel("Scene1");
+            Cursor.lockState = CursorLockMode.None;
+
     }
+
 }
