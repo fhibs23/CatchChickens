@@ -25,13 +25,11 @@ public class ChickemMove : MonoBehaviour
 
         anim.SetTrigger("WaitTrigger");
 
-        chicken.GetComponent<Rigidbody>().useGravity = false;
 
     }
     void OnMouseUp()
     {
         anim.SetTrigger("RunAgainTrigger");
-        chicken.GetComponent<Rigidbody>().useGravity = true;
 
     }
     private Vector3 GetMousePosition()
@@ -45,7 +43,7 @@ public class ChickemMove : MonoBehaviour
 
     void OnMouseDrag()
     {
-        transform.position = GetMousePosition() + MouseOffSet;
+        transform.position=GetMousePosition() + MouseOffSet; 
     }
     void Start()
     {

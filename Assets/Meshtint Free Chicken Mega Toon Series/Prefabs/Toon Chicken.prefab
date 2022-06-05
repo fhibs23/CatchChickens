@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   startWaitTime: 0
-  chicken: {fileID: 0}
+  chicken: {fileID: 2314385223677614591}
 --- !u!114 &4334584491834997849
 MonoBehaviour:
   m_ObjectHideFlags: 0
