@@ -25,7 +25,6 @@ public class ChickemMove : MonoBehaviour
 
         anim.SetTrigger("WaitTrigger");
 
-
     }
     void OnMouseUp()
     {
@@ -43,14 +42,16 @@ public class ChickemMove : MonoBehaviour
 
     void OnMouseDrag()
     {
-        transform.position=GetMousePosition() + MouseOffSet; 
+
+        chicken.GetComponent<Rigidbody>().velocity = (GetMousePosition()+ MouseOffSet -  chicken.GetComponent<Rigidbody>().transform.position) * 120 * Time.deltaTime;
     }
+
     void Start()
     {
         waitTime = startWaitTime;
         vZ = Random.Range(-10f, 10f);
         transform.eulerAngles = new Vector3(0, 0, 0);
-        transform.position = new Vector3(0, 0, 0);      //стартуем в центре карты
+        
         anim = GetComponent<Animator>();
     }
 
@@ -59,33 +60,24 @@ public class ChickemMove : MonoBehaviour
 
         if(wait)
                 {
+            
+
             waitTime -= Time.deltaTime;
             if (waitTime < 0)
             {
                 wait = false;
-                moveTarget = new Vector3(Random.Range(-10f, 10f), 0, Random.Range(-10f, 10f));
+                moveTarget = new Vector3(Random.Range(-10f, 10f), -0.6f, Random.Range(-10f, 10f));
             }
-
-            //Vector2 pos = new Vector2(transform.position.x, transform.position.z);  
-            //Vector2 tar = new Vector2(moveTarget.x, moveTarget.z);  
-
-            //angle = Vector2.Angle(pos, tar);
-            // Debug.Log(angle);
-            //transform.Rotate(0f, angle, 0f, Space.Self);
-
-            //if (transform.position.z > moveTarget.z) {
-            //  transform.Rotate(0f, 180, 0f, Space.Self);
-            //
-            
-                Vector3 relativePos = moveTarget - transform.position;
-
-                // the second argument, upwards, defaults to Vector3.up
-                Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-                transform.rotation = rotation;
+                
             }
             
         else
                 {
+            Vector3 relativePos = moveTarget - transform.position;
+
+            // the second argument, upwards, defaults to Vector3.up
+            Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+            transform.rotation = rotation;
 
             transform.position = Vector3.MoveTowards(transform.position, moveTarget, speed * Time.deltaTime);
 
